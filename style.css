@@ -20,7 +20,7 @@ h2 {
 
 /* Descrição do mapa */
 .map-description {
-    font-size: 16px;
+    font-size: 12px;
     color: #555;
     margin: 10px auto;
     width: 80%;
@@ -39,7 +39,7 @@ h2 {
     padding: 10px;
     font-size: 24px;
     cursor: pointer;
-    background-color: #007bff;
+    background-color: #222222;
     border: none;
     border-radius: 50%;
     width: 50px;
@@ -53,6 +53,16 @@ h2 {
 
 #toggleMode:hover {
     background-color: #0056b3;
+}
+
+/* Modo Noturno para botões */
+.dark-mode button {
+    background-color: #e7e7e7;
+    color: rgb(68, 68, 68);
+}
+
+.dark-mode button:hover {
+    background-color: #666;
 }
 
 /* Grupo de inputs */
@@ -117,16 +127,6 @@ button {
 
 button:hover {
     background-color: #0056b3;
-}
-
-/* Modo Noturno para botões */
-.dark-mode button {
-    background-color: #444;
-    color: white;
-}
-
-.dark-mode button:hover {
-    background-color: #666;
 }
 
 /* Estilo do mapa */
