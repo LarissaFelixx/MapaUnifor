@@ -18,7 +18,7 @@ const darkModeStyle = [
 ];
 
 // 🔗 Novo link da imagem (confirme que está correto)
-const iconUrl = "https://i.ibb.co/GvZKxgHZ/Design-sem-nome-7.png"; 
+const iconUrl = "https://i.ibb.co/v48tzNgX/Design-sem-nome-9.png"; 
 
 function initMap() {
     const uniforLocation = { lat: -3.770733, lng: -38.478258 };
