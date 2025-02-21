@@ -1,6 +1,7 @@
 let map;
+let markers = [];
+
 let darkMode = false; // Estado inicial do modo escuro
-let markers = []; // Lista de marcadores
 
 // Estilos para Dark Mode
 const darkModeStyle = [
@@ -16,6 +17,9 @@ const darkModeStyle = [
     { featureType: "water", elementType: "labels.text.fill", stylers: [{ color: "#3d3d3d" }] }
 ];
 
+// 🔗 Novo link da imagem (confirme que está correto)
+const iconUrl = "https://i.ibb.co/GvZKxgHZ/Design-sem-nome-7.png"; 
+
 function initMap() {
     const uniforLocation = { lat: -3.770733, lng: -38.478258 };
 
@@ -24,22 +28,26 @@ function initMap() {
         center: uniforLocation,
     });
 
-    // Adicionar marcador inicial
+    // Criar marcador inicial com ícone redimensionado
     const initialMarker = new google.maps.Marker({
         position: uniforLocation,
         map: map,
         title: "Universidade de Fortaleza - UNIFOR",
-        draggable: true // Agora o pino pode ser movido
+        draggable: true,
+        icon: {
+            url: iconUrl,
+            scaledSize: new google.maps.Size(60, 70), // Redimensionado para 32x32 pixels
+            origin: new google.maps.Point(0, 0),
+            anchor: new google.maps.Point(16, 32) // Ajusta a posição do ícone no mapa
+        }
     });
 
-    // Evento para atualizar coordenadas quando o pino for movido
     google.maps.event.addListener(initialMarker, 'dragend', function (event) {
         updateMarkerPosition(0, event.latLng.lat(), event.latLng.lng());
     });
 
     markers.push({ marker: initialMarker, title: "Universidade de Fortaleza - UNIFOR" });
     updateMarkerList();
-
     document.getElementById("toggleMode").addEventListener("click", toggleMapMode);
 }
 
@@ -56,6 +64,7 @@ function toggleMapMode() {
     // Alterar o emoji do botão
     const modeButton = document.getElementById("toggleMode");
     modeButton.innerText = darkMode ? "☀️" : "🌙";
+
 }
 
 function addMarker() {
@@ -68,17 +77,22 @@ function addMarker() {
         return;
     }
 
-    // Criar um novo marcador ARRÁSTAVEL
+    // Criar marcador com ícone ajustado
     const marker = new google.maps.Marker({
         position: { lat, lng },
         map: map,
         title: title,
-        draggable: true
+        draggable: true,
+        icon: {
+            url: iconUrl,
+            scaledSize: new google.maps.Size(60, 70), // Redimensionado para 32x32 pixels
+            origin: new google.maps.Point(0, 0),
+            anchor: new google.maps.Point(16, 32) // Ajusta a posição no mapa
+        }
     });
 
     const markerIndex = markers.length;
 
-    // Evento para atualizar coordenadas quando o pino for movido
     google.maps.event.addListener(marker, 'dragend', function (event) {
         updateMarkerPosition(markerIndex, event.latLng.lat(), event.latLng.lng());
     });
@@ -88,7 +102,6 @@ function addMarker() {
     map.setCenter({ lat, lng });
 }
 
-// Atualiza a lista de marcadores
 function updateMarkerList() {
     const markerList = document.getElementById("markerList");
     markerList.innerHTML = "";
@@ -101,13 +114,11 @@ function updateMarkerList() {
     });
 }
 
-// Atualiza a posição do marcador quando ele é movido
 function updateMarkerPosition(index, newLat, newLng) {
     markers[index].marker.setPosition({ lat: newLat, lng: newLng });
-    updateMarkerList(); // Atualiza a exibição na tela
+    updateMarkerList();
 }
 
-// Remove um marcador da lista e do mapa
 function removeMarker(index) {
     markers[index].marker.setMap(null);
     markers.splice(index, 1);

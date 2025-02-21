@@ -3,7 +3,7 @@ body {
     font-family: Arial, sans-serif;
     text-align: center;
     background-color: #f4f4f4;
-    color: #333;
+    color: #5a5a5a;
     transition: background-color 0.3s, color 0.3s;
 }
 
@@ -52,7 +52,7 @@ h2 {
 }
 
 #toggleMode:hover {
-    background-color: #0056b3;
+    background-color: #999999;
 }
 
 /* Modo Noturno para botões */
@@ -62,7 +62,7 @@ h2 {
 }
 
 .dark-mode button:hover {
-    background-color: #666;
+    background-color: #ececec;
 }
 
 /* Grupo de inputs */
@@ -108,7 +108,7 @@ h2 {
 }
 
 .dark-mode .input-group input {
-    background-color: #333;
+    background-color: #eeeeee;
     color: white;
     border: 1px solid #ffffff;
 }
