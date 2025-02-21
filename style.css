@@ -1,0 +1,176 @@
+/* Estilização geral (Modo Claro - Padrão) */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+    color: #333;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Modo Noturno */
+.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+/* Título principal */
+h2 {
+    margin-top: 20px;
+}
+
+/* Descrição do mapa */
+.map-description {
+    font-size: 16px;
+    color: #555;
+    margin: 10px auto;
+    width: 80%;
+    max-width: 600px;
+    line-height: 1.5;
+}
+
+/* Modo Noturno para a descrição */
+.dark-mode .map-description {
+    color: #ddd;
+}
+
+/* Botão de alternância de modo (Light/Dark) */
+#toggleMode {
+    margin: 10px;
+    padding: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    background-color: #007bff;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+    color: white;
+}
+
+#toggleMode:hover {
+    background-color: #0056b3;
+}
+
+/* Grupo de inputs */
+.controls {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px auto;
+    width: 80%;
+}
+
+/* Estilização do grupo de inputs */
+.input-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+/* Rótulos (labels) dos inputs */
+.input-group label {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 3px;
+    color: #333;
+}
+
+/* Inputs */
+.input-group input {
+    width: 200px;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    text-align: center;
+    outline: none;
+    transition: 0.3s;
+}
+
+/* Modo Noturno para rótulos e inputs */
+.dark-mode .input-group label {
+    color: #ddd;
+}
+
+.dark-mode .input-group input {
+    background-color: #333;
+    color: white;
+    border: 1px solid #ffffff;
+}
+
+/* Botão de adicionar marcador */
+button {
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Modo Noturno para botões */
+.dark-mode button {
+    background-color: #444;
+    color: white;
+}
+
+.dark-mode button:hover {
+    background-color: #666;
+}
+
+/* Estilo do mapa */
+#map {
+    height: 500px;
+    width: 80%;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Lista de marcadores */
+#markerList {
+    list-style-type: none;
+    padding: 0;
+}
+
+#markerList li {
+    background: #e3e3e3;
+    padding: 8px;
+    margin: 5px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Modo Noturno para lista */
+.dark-mode #markerList li {
+    background: #333;
+    color: white;
+}
+
+/* Botão de remover marcador */
+#markerList button {
+    background-color: red;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    color: white;
+    border-radius: 5px;
+}
+
+/* Botão de remover no modo noturno */
+.dark-mode #markerList button {
+    background-color: darkred;
+}

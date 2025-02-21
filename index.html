@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapa Interativo - UNIFOR</title>
+
+    <!-- Importação do CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h2>Mapa Interativo - Universidade de Fortaleza (UNIFOR)</h2>
+
+    <!-- Descrição do mapa -->
+    <p class="map-description">
+        Este mapa interativo permite visualizar a localização da UNIFOR e adicionar pontos personalizados.
+        Para adicionar um marcador, insira a **latitude** e **longitude**, um título (opcional) e clique 
+        em "Adicionar Marcador". Você pode alternar entre os modos claro e escuro com o botão de alternância. 🌍
+    </p>
+
+    <!-- Botão para alternar entre Light e Dark Mode -->
+    <button id="toggleMode">🌙</button>
+
+    <!-- Controles para adicionar marcador -->
+    <div class="controls">
+        <div class="input-group">
+            <label for="latitude">Latitude:</label>
+            <input type="text" id="latitude" placeholder="Ex: -3.7707">
+        </div>
+
+        <div class="input-group">
+            <label for="longitude">Longitude:</label>
+            <input type="text" id="longitude" placeholder="Ex: -38.4782">
+        </div>
+
+        <div class="input-group">
+            <label for="title">Título do marcador:</label>
+            <input type="text" id="title" placeholder="Opcional">
+        </div>
+
+        <button onclick="addMarker()">Adicionar Marcador</button>
+    </div>
+
+    <!-- Mapa -->
+    <div id="map"></div>
+
+    <!-- Lista de marcadores adicionados -->
+    <h3>Marcadores Adicionados</h3>
+    <ul id="markerList"></ul>
+
+    <!-- Importação do JavaScript -->
+    <script src="script.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCxoQJMyo0IdV2Npq1CoFlIF0EJw2VbQYM&callback=initMap" async defer></script>
+
+</body>
+</html>
