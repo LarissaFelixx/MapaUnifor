@@ -1,9 +1,9 @@
 let map;
 let markers = [];
 
-let darkMode = false; // Estado inicial do modo escuro
+let darkMode = false; 
 
-// Estilos para Dark Mode
+
 const darkModeStyle = [
     { elementType: "geometry", stylers: [{ color: "#212121" }] },
     { elementType: "labels.text.stroke", stylers: [{ color: "#212121" }] },
@@ -17,7 +17,6 @@ const darkModeStyle = [
     { featureType: "water", elementType: "labels.text.fill", stylers: [{ color: "#3d3d3d" }] }
 ];
 
-// 🔗 Novo link da imagem (confirme que está correto)
 const iconUrl = "https://i.ibb.co/v48tzNgX/Design-sem-nome-9.png"; 
 
 function initMap() {
@@ -28,7 +27,7 @@ function initMap() {
         center: uniforLocation,
     });
 
-    // Criar marcador inicial com ícone redimensionado
+    
     const initialMarker = new google.maps.Marker({
         position: uniforLocation,
         map: map,
@@ -36,9 +35,9 @@ function initMap() {
         draggable: true,
         icon: {
             url: iconUrl,
-            scaledSize: new google.maps.Size(60, 70), // Redimensionado para 32x32 pixels
+            scaledSize: new google.maps.Size(60, 70), 
             origin: new google.maps.Point(0, 0),
-            anchor: new google.maps.Point(16, 32) // Ajusta a posição do ícone no mapa
+            anchor: new google.maps.Point(16, 32) 
         }
     });
 
@@ -51,7 +50,7 @@ function initMap() {
     document.getElementById("toggleMode").addEventListener("click", toggleMapMode);
 }
 
-// Alternar entre Light e Dark Mode
+
 function toggleMapMode() {
     darkMode = !darkMode;
 
@@ -61,7 +60,7 @@ function toggleMapMode() {
 
     document.body.classList.toggle("dark-mode");
 
-    // Alterar o emoji do botão
+    
     const modeButton = document.getElementById("toggleMode");
     modeButton.innerText = darkMode ? "☀️" : "🌙";
 
@@ -77,7 +76,7 @@ function addMarker() {
         return;
     }
 
-    // Criar marcador com ícone ajustado
+    
     const marker = new google.maps.Marker({
         position: { lat, lng },
         map: map,
@@ -85,9 +84,9 @@ function addMarker() {
         draggable: true,
         icon: {
             url: iconUrl,
-            scaledSize: new google.maps.Size(60, 70), // Redimensionado para 32x32 pixels
+            scaledSize: new google.maps.Size(60, 70), 
             origin: new google.maps.Point(0, 0),
-            anchor: new google.maps.Point(16, 32) // Ajusta a posição no mapa
+            anchor: new google.maps.Point(16, 32) 
         }
     });
 

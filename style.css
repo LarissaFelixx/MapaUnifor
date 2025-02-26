@@ -1,4 +1,4 @@
-/* Estilização geral (Modo Claro - Padrão) */
+
 body {
     font-family: Arial, sans-serif;
     text-align: center;
@@ -7,18 +7,18 @@ body {
     transition: background-color 0.3s, color 0.3s;
 }
 
-/* Modo Noturno */
+
 .dark-mode {
     background-color: #121212;
     color: #ffffff;
 }
 
-/* Título principal */
+
 h2 {
     margin-top: 20px;
 }
 
-/* Descrição do mapa */
+
 .map-description {
     font-size: 12px;
     color: #555;
@@ -28,12 +28,12 @@ h2 {
     line-height: 1.5;
 }
 
-/* Modo Noturno para a descrição */
+
 .dark-mode .map-description {
     color: #ddd;
 }
 
-/* Botão de alternância de modo (Light/Dark) */
+
 #toggleMode {
     margin: 10px;
     padding: 10px;
@@ -55,7 +55,7 @@ h2 {
     background-color: #999999;
 }
 
-/* Modo Noturno para botões */
+
 .dark-mode button {
     background-color: #e7e7e7;
     color: rgb(68, 68, 68);
@@ -65,7 +65,7 @@ h2 {
     background-color: #ececec;
 }
 
-/* Grupo de inputs */
+
 .controls {
     display: flex;
     flex-wrap: wrap;
@@ -75,14 +75,14 @@ h2 {
     width: 80%;
 }
 
-/* Estilização do grupo de inputs */
+
 .input-group {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
 }
 
-/* Rótulos (labels) dos inputs */
+
 .input-group label {
     font-size: 14px;
     font-weight: bold;
@@ -90,7 +90,7 @@ h2 {
     color: #333;
 }
 
-/* Inputs */
+
 .input-group input {
     width: 200px;
     padding: 8px;
@@ -102,7 +102,7 @@ h2 {
     transition: 0.3s;
 }
 
-/* Modo Noturno para rótulos e inputs */
+
 .dark-mode .input-group label {
     color: #ddd;
 }
@@ -113,7 +113,7 @@ h2 {
     border: 1px solid #ffffff;
 }
 
-/* Botão de adicionar marcador */
+
 button {
     padding: 10px 15px;
     font-size: 16px;
@@ -129,7 +129,7 @@ button:hover {
     background-color: #0056b3;
 }
 
-/* Estilo do mapa */
+
 #map {
     height: 500px;
     width: 80%;
@@ -138,7 +138,7 @@ button:hover {
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Lista de marcadores */
+
 #markerList {
     list-style-type: none;
     padding: 0;
@@ -154,13 +154,13 @@ button:hover {
     align-items: center;
 }
 
-/* Modo Noturno para lista */
+
 .dark-mode #markerList li {
     background: #333;
     color: white;
 }
 
-/* Botão de remover marcador */
+
 #markerList button {
     background-color: red;
     border: none;
@@ -170,7 +170,7 @@ button:hover {
     border-radius: 5px;
 }
 
-/* Botão de remover no modo noturno */
+
 .dark-mode #markerList button {
     background-color: darkred;
 }
