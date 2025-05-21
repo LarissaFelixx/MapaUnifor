@@ -2,6 +2,10 @@
 
 Este é um projeto interativo desenvolvido com HTML, CSS, JavaScript e Google Maps API, que permite ao usuário visualizar o mapa da Universidade de Fortaleza (UNIFOR), adicionar e gerenciar marcadores personalizados, além de alternar entre os modos claro e escuro para melhor experiência.
 
+# 📌 **Atividade Proposta**
+
+A atividade tinha como objetivo aplicar conhecimentos práticos em tecnologias web. Os alunos deveriam desenvolver um mapa interativo em que, a partir da inserção das coordenadas de latitude e longitude, fosse criado um pin para marcação do local correspondente no mapa.
+
 ---
 
 ## 🌍 **Visualize o projeto**
