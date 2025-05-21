@@ -45,5 +45,5 @@ Este é um projeto interativo desenvolvido com HTML, CSS, JavaScript e Google Ma
   Este é um projeto de código aberto! Sugestões, melhorias, issues e pull requests são muito bem-vindos.
 
   ## 👩‍💻 **Autora**
- **Larissa Kich**
+  **Larissa Félix**
   📧 Email: larissafelix@edu.unifor.br
