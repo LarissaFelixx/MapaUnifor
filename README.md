@@ -4,6 +4,10 @@ Este é um projeto interativo desenvolvido com HTML, CSS, JavaScript e Google Ma
 
 ---
 
+## 🌍 **Visualize o projeto**
+
+(https://larissafelixx.github.io/MapaUnifor/)
+
 ## 🚀 **Funcionalidades**
 ✅ Exibir o mapa da UNIFOR com marcador inicial.
 
