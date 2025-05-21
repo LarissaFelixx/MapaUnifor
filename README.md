@@ -36,14 +36,14 @@ Este é um projeto interativo desenvolvido com HTML, CSS, JavaScript e Google Ma
 - JavaScript → Lógica da aplicação e interatividade.
 - Google Maps API → Renderização e manipulação do mapa e dos marcadores.
 
-  ## ✅ **Pré-requisitos**
+## ✅ **Pré-requisitos**
 
-  Nenhum. O projeto funciona diretamente no navegador.
+Nenhum. O projeto funciona diretamente no navegador.
 
-  ## 🤝 **Contribuição**
+## 🤝 **Contribuição**
 
-  Este é um projeto de código aberto! Sugestões, melhorias, issues e pull requests são muito bem-vindos.
+Este é um projeto de código aberto! Sugestões, melhorias, issues e pull requests são muito bem-vindos.
 
-  ## 👩‍💻 **Autora**
-  **Larissa Félix**
-  📧 Email: larissafelix@edu.unifor.br
+## 👩‍💻 **Autora**
+**Larissa Félix**
+📧 Email: larissafelix@edu.unifor.br
